@@ -1,0 +1,67 @@
+.time-selector {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  > p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+}
+
+.time-slots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.time-slot {
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  color: #2c2c2c;
+
+  &:hover {
+    border-color: #e8b4c4;
+    background-color: #f9f7f4;
+  }
+
+  &.selected {
+    background-color: #e8b4c4;
+    color: white;
+    border-color: #d4a5a5;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.selected-time-display {
+  text-align: center;
+  padding: 15px;
+  background-color: #f9f7f4;
+  border-radius: 8px;
+
+  p {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  strong {
+    color: #d4a5a5;
+  }
+}
+
+@media (max-width: 768px) {
+  .time-slots-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+}

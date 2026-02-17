@@ -1,0 +1,33 @@
+.admin-navbar {
+  background: linear-gradient(135deg, #d4a5a5 0%, #a68080 100%);
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.admin-nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.admin-nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .logo {
+    font-size: 32px;
+  }
+
+  h1 {
+    font-size: 24px;
+    color: white;
+    margin: 0;
+  }
+}

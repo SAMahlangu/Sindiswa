@@ -1,0 +1,70 @@
+.service-selector {
+  h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  > p {
+    color: #666;
+    margin-bottom: 30px;
+  }
+}
+
+.services-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.service-option {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: white;
+
+  &:hover {
+    border-color: #e8b4c4;
+    background-color: #f9f7f4;
+  }
+
+  &.selected {
+    border-color: #e8b4c4;
+    background-color: #fff3f9;
+  }
+
+  input[type='radio'] {
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  .option-content {
+    flex: 1;
+
+    h4 {
+      margin: 0 0 5px 0;
+      color: #2c2c2c;
+    }
+
+    p {
+      margin: 0 0 10px 0;
+      color: #666;
+      font-size: 14px;
+    }
+  }
+
+  .option-meta {
+    display: flex;
+    gap: 20px;
+    font-size: 13px;
+    color: #999;
+
+    .price {
+      color: #d4a5a5;
+      font-weight: 600;
+    }
+  }
+}
